@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}{% endblock title %}|  Gupta Jewellers</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <!-- css file-->
+     <link href="../static/css/base.css" rel="stylesheet">
+    </head>
+  <body>
+    
+    <!--adding nav bar-->
+      <nav class="navbar navbar-expand-lg fixed-top navbar-scroll shadow-0" style="background-color: #ffede7;">
+    <div class="container">
+      <a class="navbar-brand" href="#">our jewelry</a>
+      <button class="navbar-toggler ps-0" type="button" data-mdb-collapse-init data-mdb-target="#navbarExample01"
+        aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="d-flex justify-content-start align-items-center">
+          <i class="fas fa-bars"></i>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarExample01">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link px-3" href="/home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3" href="/products">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3" href="/about">about us</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link px-3" href="/catalogue">catalogue</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3" href="/contact">contact us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3" href="/login">login</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link px-3" href="/signup">signup</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3" href="/logout">logout</a>
+          </li>
+          
+
+        </ul>
+  
+        <ul class="navbar-nav flex-row">
+          <li class="nav-item">
+            <a class="nav-link pe-3" href="#!">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3" href="#!">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ps-3" href="#!">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-5 pt-5">
+
+{% block content %}
+{% endblock content %}
+
+</div>
+
+  <!--adding footer-->
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+<br/>
+    <div >
+
+  <!-- Footer -->
+<footer class="text-center text-lg-start text-white" style="background-color: #1c2331;">
+
+  <!-- Social Media Section -->
+  <section class="d-flex justify-content-between p-4" style="background-color: #8b5cf6;">
+    <div class="me-5">
+      <span>Follow Gupta Jewellers on social networks:</span>
+    </div>
+
+    <div>
+      <a href="#" class="text-white me-4"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="text-white me-4"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="text-white me-4"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="text-white me-4"><i class="fab fa-youtube"></i></a>
+    </div>
+  </section>
+
+  <!-- Links Section -->
+  <section>
+    <div class="container text-center text-md-start mt-5">
+      <div class="row mt-3">
+
+        <!-- Company Info -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold">Gupta Jewellers</h6>
+          <hr class="mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 60px; background-color: gold; height: 2px;" />
+          <p>
+            Discover elegant gold, silver, diamond, and bridal jewellery.
+            We provide premium quality designs at affordable prices with
+            trusted service and fast delivery.
+          </p>
+        </div>
+
+        <!-- Products -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold">Products</h6>
+          <hr class="mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 60px; background-color: gold; height: 2px;" />
+          <p><a href="#" class="text-white text-decoration-none">Gold Rings</a></p>
+          <p><a href="#" class="text-white text-decoration-none">Necklaces</a></p>
+          <p><a href="#" class="text-white text-decoration-none">Bangles</a></p>
+          <p><a href="#" class="text-white text-decoration-none">Earrings</a></p>
+        </div>
+
+        <!-- Useful Links -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold">Quick Links</h6>
+          <hr class="mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 60px; background-color: gold; height: 2px;" />
+          <p><a href="#" class="text-white text-decoration-none">Home</a></p>
+          <p><a href="#" class="text-white text-decoration-none">Shop</a></p>
+          <p><a href="#" class="text-white text-decoration-none">About Us</a></p>
+          <p><a href="#" class="text-white text-decoration-none">Contact</a></p>
+        </div>
+
+        <!-- Contact -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <h6 class="text-uppercase fw-bold">Contact</h6>
+          <hr class="mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 60px; background-color: gold; height: 2px;" />
+          <p><i class="fas fa-home me-2"></i> Prayagraj, Uttar Pradesh</p>
+          <p><i class="fas fa-envelope me-2"></i> guptajewellers@gmail.com</p>
+          <p><i class="fas fa-phone me-2"></i> +91 98765 43210</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0,0,0,0.2);">
+    © 2026 Gupta Jewellers | All Rights Reserved
+  </div>
+
+</footer>
+
+</div>
+<!-- End of .container -->
+
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>

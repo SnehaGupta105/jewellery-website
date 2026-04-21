@@ -1,0 +1,126 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Product Detail{% endblock title %}
+
+{% block content %}
+
+<div class="container mt-5 pt-5">
+
+    <div class="row">
+
+    <!-- PRODUCT IMAGE SECTION -->
+        <div class="col-md-6">
+            <img src="{% static 'img/jwel1.png' %}" class="img-fluid rounded shadow mb-3">
+            <div class="d-flex gap-2">
+                <img src="{% static 'img/jwel1.png' %}" width="80" class="border rounded">
+                <img src="{% static 'img/jwel2.png' %}" width="80" class="border rounded">
+                <img src="{% static 'img/jwel3.png' %}" width="80" class="border rounded">
+            </div>
+        </div>
+
+        <!-- PRODUCT DETAILS -->
+
+        <div class="col-md-6">
+            <h2 class="fw-bold">Diamond Necklace Set</h2>
+            <p class="text-muted">
+                Elegant handcrafted diamond jewellery perfect for weddings 
+                and special occasions.
+            </p>
+            <h3 class="text-danger fw-bold">₹4,35,999</h3>
+            <p>
+                <strong>Availability:</strong> 
+                <span class="text-success">In Stock</span>
+            </p>
+            <hr>
+
+            <!-- PRODUCT OPTIONS -->
+
+            <div class="mb-3">
+                <label class="fw-bold">Select Size:</label>
+                <select class="form-control">
+                    <option>Small</option>
+                    <option>Medium</option>
+                    <option>Large</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="fw-bold">
+                    Quantity:
+                </label>
+                <input type="number" class="form-control" value="1">
+            </div>
+
+            <!-- BUTTONS -->
+
+            <div class="d-flex gap-2">
+                <button class="btn btn-danger px-4">Buy Now</button>
+                <button class="btn btn-outline-dark px-4">Add to Cart</button>
+            </div>
+            <hr>
+
+            <!-- PRODUCT FEATURES -->
+            
+            <h5 class="fw-bold mt-4">Product Details</h5>
+            <ul>
+                <li>Material: 22K Gold</li>
+                <li>Stone: Diamond</li>
+                <li>Weight: 25 grams</li>
+                <li>Design Type: Bridal</li>
+                <li>Occasion: Wedding</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- RELATED PRODUCTS -->
+    
+    <div class="mt-5">
+        <h3 class="fw-bold mb-4 text-center">Related Products</h3>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card shadow">
+                    <img src="{% static 'img/jwel2.png' %}" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h6>Diamond Necklace</h6>
+                        <p class="text-danger">₹3,32,999</p>
+                        <button class="btn btn-sm btn-outline-dark">View</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card shadow">
+                    <img src="{% static 'img/jwel3.png' %}" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h6>Gold Set</h6>
+                        <p class="text-danger">₹1,19,999</p>
+                        <button class="btn btn-sm btn-outline-dark">View</button>
+                    </div>
+                </div>
+            </div>                
+
+                <div class="col-md-3">
+                <div class="card shadow">
+                    <img src="{% static 'img/gold_earring.png' %}" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h6>Gold Earring</h6>
+                        <p class="text-danger">₹54,999</p>
+                        <button class="btn btn-sm btn-outline-dark">View</button>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-md-3">
+                <div class="card shadow">
+                    <img src="{% static 'img\Gold_bangles.png' %}" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h6>Bangles</h6>
+                        <p class="text-danger">₹41,999</p>
+                        <button class="btn btn-sm btn-outline-dark">View</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

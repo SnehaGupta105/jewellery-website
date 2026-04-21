@@ -1,0 +1,238 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Home{% endblock title %}
+
+{% block content %}
+
+<!-- HERO SPLIT SECTION -->
+
+<section class="container-fluid p-0">
+
+<div class="row g-0 align-items-center">
+
+<!-- LEFT TEXT -->
+
+<div class="col-md-6 hero-text">
+
+<h1 class="display-4 fw-bold">
+Luxury Jewellery <br>
+For Every Occasion
+</h1>
+
+<p class="lead">
+
+Discover beautifully crafted jewellery designed 
+to celebrate your most precious moments.
+
+</p>
+
+<a href="/catalogue" class="btn btn-dark px-4">
+Explore Collection
+</a>
+
+</div>
+
+<!-- RIGHT IMAGE -->
+
+<div class="col-md-6">
+
+<img src="{% static 'img/jwel1.png' %}" 
+     class="img-fluid hero-img">
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- COLLECTION SHOWCASE -->
+
+<section class="container my-5">
+
+<h2 class="text-center fw-bold mb-5">
+Our Collections
+</h2>
+
+<div class="row">
+
+<div class="col-md-3">
+
+<div class="collection-card">
+
+<img src="{% static 'img/jwel1.png' %}">
+
+<h5>Diamond</h5>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="collection-card">
+
+<img src="{% static 'img/jwel2.png' %}">
+
+<h5>Gold</h5>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="collection-card">
+
+<img src="{% static 'img/jwel3.png' %}">
+
+<h5>Silver</h5>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="collection-card">
+
+<img src="{% static 'img/jwel2.png' %}">
+
+<h5>Ruby</h5>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FEATURE SECTION -->
+
+<section class="bg-light py-5">
+
+<div class="container">
+
+<div class="row align-items-center">
+
+<div class="col-md-6">
+
+<img src="{% static 'img/jwel3.png' %}" 
+     class="img-fluid rounded shadow">
+
+</div>
+
+<div class="col-md-6">
+
+<h2 class="fw-bold">
+Elegance That Lasts Forever
+</h2>
+
+<p class="lead">
+
+Every piece of jewellery tells a story of love, 
+tradition, and beauty. Our designs are created 
+to make your moments unforgettable.
+
+</p>
+
+<a href="/catalogue" class="btn btn-outline-dark">
+View Products
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- WHY CHOOSE US -->
+
+<section class="container text-center my-5">
+
+<h2 class="fw-bold mb-5">
+Why Choose Us
+</h2>
+
+<div class="row">
+
+<div class="col-md-4">
+
+<div class="why-box">
+
+<h5>💎 Premium Materials</h5>
+
+<p>
+High-quality certified materials 
+used in every design.
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="why-box">
+
+<h5>✨ Unique Designs</h5>
+
+<p>
+Exclusive handcrafted jewellery 
+for every style.
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="why-box">
+
+<h5>🚚 Fast Delivery</h5>
+
+<p>
+Safe and quick delivery 
+across locations.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- TESTIMONIAL SECTION -->
+
+<section class="bg-dark text-white py-5">
+
+<div class="container text-center">
+
+<h2 class="fw-bold mb-4">
+Customer Reviews
+</h2>
+
+<p class="lead">
+
+"Beautiful designs and excellent quality. 
+Highly recommended jewellery store!"
+
+</p>
+
+<h6>- Happy Customer</h6>
+
+</div>
+
+</section>
+
+{% endblock content %}

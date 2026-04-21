@@ -1,0 +1,226 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}About Us{% endblock title %}
+
+{% block content %}
+
+<!-- HERO SECTION -->
+<section class="hero-section text-center text-white">
+
+    <div class="hero-overlay">
+
+        <h1 class="display-4 fw-bold">
+            Crafting Timeless Jewellery
+        </h1>
+
+        <p class="lead">
+            Elegant designs made with passion and perfection.
+        </p>
+
+        <a href="/catalogue" class="btn btn-danger px-4">
+            Explore Collection
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- COLLECTION TYPES -->
+<section class="container text-center my-5">
+
+    <h2 class="fw-bold mb-5">
+        Our Jewellery Collections
+    </h2>
+
+    <div class="row">
+
+        <div class="col-md-3">
+            <div class="collection-box">
+                💍
+                <h5>Rings</h5>
+                <p>Beautiful engagement rings</p>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="collection-box">
+                📿
+                <h5>Necklaces</h5>
+                <p>Elegant necklace designs</p>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="collection-box">
+                🪔
+                <h5>Earrings</h5>
+                <p>Modern & traditional styles</p>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="collection-box">
+                💎
+                <h5>Bracelets</h5>
+                <p>Luxury wrist jewellery</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FEATURED PRODUCTS -->
+<section class="bg-light py-5">
+
+<div class="container text-center">
+
+<h2 class="fw-bold mb-5">
+Featured Jewellery
+</h2>
+
+<div class="row">
+
+<div class="col-md-4">
+
+<div class="card shadow">
+
+<img src="{% static 'img/jwel1.png' %}" class="card-img-top">
+
+<div class="card-body">
+
+<h5>Diamond Necklace</h5>
+
+<p>Elegant luxury design</p>
+
+<button class="btn btn-outline-dark">
+View Product
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="col-md-4">
+
+<div class="card shadow">
+
+<img src="{% static 'img/jwel2.png' %}" class="card-img-top">
+
+<div class="card-body">
+
+<h5>Gold Necklace</h5>
+
+<p>Traditional masterpiece</p>
+
+<button class="btn btn-outline-dark">
+View Product
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="col-md-4">
+
+<div class="card shadow">
+
+<img src="{% static 'img/jwel3.png' %}" class="card-img-top">
+
+<div class="card-body">
+
+<h5>Silver Jewellery</h5>
+
+<p>Modern stylish look</p>
+
+<button class="btn btn-outline-dark">
+View Product
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- WHY CHOOSE US -->
+<section class="container text-center my-5">
+
+<h2 class="fw-bold mb-5">
+Why Choose Us
+</h2>
+
+<div class="row">
+
+<div class="col-md-4">
+
+<h5>💎 Premium Quality</h5>
+
+<p>
+We use certified high-quality materials.
+</p>
+
+</div>
+
+<div class="col-md-4">
+
+<h5>✨ Unique Designs</h5>
+
+<p>
+Exclusive modern & traditional styles.
+</p>
+
+</div>
+
+<div class="col-md-4">
+
+<h5>😊 Trusted Brand</h5>
+
+<p>
+Customer satisfaction is our priority.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- OUR STORY -->
+<section class="bg-dark text-white py-5">
+
+<div class="container text-center">
+
+<h2 class="fw-bold mb-4">
+Our Story
+</h2>
+
+<p class="lead">
+
+Jewellery is more than beauty — it is a symbol of love, tradition, 
+and precious memories. At Gupta Jewellers, every design is created 
+to celebrate your special moments and make them unforgettable.
+</p>
+
+</div>
+
+</section>
+
+{% endblock content %}
